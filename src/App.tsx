@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import appRouter from "./routes";
 
 function App() {
   return (
-    <div className="text-3xl font-bold text-green-800">
-      Let build Netflix GPT
+    <div>
+      <RouterProvider router={appRouter} />
     </div>
   );
 }
