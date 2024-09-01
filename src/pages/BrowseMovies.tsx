@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useGetNowPlayingMoviesQuery } from "../store/movies";
+import MainContainer from "../components/MainContainer";
+import SecondaryContainer from "../components/SecondaryContainer";
 
 const BrowseMovies = () => {
-  const [page, setPage] = useState(1);
-  const { data, isLoading, isFetching } = useGetNowPlayingMoviesQuery({
-    language: "en-US",
-    page: page,
-  });
-  return <div>This is browse movies</div>;
+  return (
+    <div>
+      <MainContainer />
+      <SecondaryContainer />
+    </div>
+  );
 };
 
 export default BrowseMovies;
