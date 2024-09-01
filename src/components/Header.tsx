@@ -9,7 +9,7 @@ import { isEmpty } from "../utils/validate";
 import { removeUser } from "../store/user";
 import { useDispatch } from "react-redux";
 import { USER_PLACEHOLDER_LOGO, NETFLIX_LOGO } from "../constants/AppConstants";
-
+// Test Comment
 const Header = () => {
   const { user, isLoggedIn } = useSelector((state: IRootState) => ({
     user: getAuthInfo(state),
